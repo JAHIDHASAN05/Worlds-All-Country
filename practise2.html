@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+            color: white;
+            display: flex;
+        }
+        .country-title{
+            color: rgb(85, 199, 245);
+        }
+
+        .country-box-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-title{
+            color: rgb(41, 191, 251);
+            font-size: 2rem;
+
+        }
+        .country-box-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:2rem;
+            padding: 1rem;
+            
+            margin-right: 15rem;
+
+        }
+        .country{
+            border: 2px solid red;
+            border-radius: 12px;
+            padding: 1rem;
+
+
+        }
+        .showing-detail-section{
+            width: 15rem;
+            background-color: white;
+            color: black;
+            position: fixed;
+            top:7rem;
+            right: 5px;
+            padding: .5rem;
+            height: 300px;
+            border-radius: 15px;
+        }
+
+        .img{
+            width: 12rem;
+            height: 7rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+  
+
+
+
+    <section class="country-box-section" >
+        <h1 class="section-title"> Worlds All Country</h1>
+        <div class="country-box-container">
+
+        </div>
+    </section>
+
+
+
+    <section class="showing-detail-section">
+
+        <h3>Specifik country Detail</h2>
+       <div class="loadDetail">
+   
+   
+       </div>
+     </section>
+
+    <script src="practise2.js"></script>
+</body>
+</html>
